@@ -1,3 +1,5 @@
+#work in progress#
+
 
 confirm("You have 10 cards from 1 to 10. Choose a card to play against the computer - the highest one wins the round. The winner of the most rounds wins the game."); 
 prompt("Choose which card")

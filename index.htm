@@ -11,17 +11,19 @@ var arrayHuman = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
  
 confirm("You have 10 cards from 1 to 10. Choose a card to play against the computer - the highest one wins the round. The winner of the most rounds wins the game."); 
 var choice = prompt("Choose which card - your current choices are " + arrayHuman)
-alert(choice)
-//var array = [2, 5, 9];
+
+
+choice = parseInt(choice)
+
 var index = arrayHuman.indexOf(choice);
-alert(index)
+
 if (index > -1) {
     arrayHuman.splice(index, 1);
 }
 
 
 //computer chooses a random card 
-Math.floor((Math.random() * 10) + 1); 
+//Math.floor((Math.random() * 10) + 1); 
 
 //compares human card to ai card 
 

@@ -24,10 +24,11 @@ var arrayComp = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //computer chooses a random card 
 choiceComp = Math.floor((Math.random() * 10) + 1); 
 if (choiceComp > choice){
- alert("the computer has won this round")
+ alert("Your choice: " + choice + "Computer choice: " + choiceComp + " The computer has won this round")
 } else {
  alert("you have won this round!")
 }
+//case for if you choose the same card - no points awarded
 
 //notify computer's chosen card and result of this round 
 //alert(choiceComp)

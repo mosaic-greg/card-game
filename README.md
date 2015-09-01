@@ -1,6 +1,6 @@
  
 
-Play the game! : https://rawgit.com/mosaic-greg/number-game-/master/index.htm
+Play the game! : http://rawgit.com/mosaic-greg/card-game/master/index.htm
 
 
 

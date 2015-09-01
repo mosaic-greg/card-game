@@ -7,10 +7,13 @@
 
 var arrayHuman = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 var arrayComp  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
- 
+var humanScore = 0
+var compScore = 0 
 confirm("You have 10 cards from 1 to 10. Choose a card to play against the computer - the highest one wins the round. The winner of the most rounds wins the game."); 
 
 //function starts here. the arguments are: 
+
+//var action = function (){
 var choice = prompt("Choose which card - your current choices are " + arrayHuman)
 choice = parseInt(choice)
 var index = arrayHuman.indexOf(choice);
@@ -19,19 +22,27 @@ if (index > -1) {
     arrayHuman.splice(index, 1);
 }
 
- 
+
+//computer chooses a random card 
 choiceComp = Math.floor((Math.random() * 10) + 1); 
 if (choiceComp > choice){
- alert("Your card: " + choice + " Computer card: " + choiceComp + ". The computer has won this round.")
+ alert("Your card: " + choice + " Computer card: " + choiceComp + ". The computer has won this round.");
+ compScore = compScore + 1
+} else if (choiceComp < choice){
+ alert("Your card: " + choice + " Computer card: " + choiceComp + ". you have won this round!");
+ humanScore = humanScore + 1
 } else {
- alert("Your card: " + choice + " Computer card: " + choiceComp + ". you have won this round!")
+  alert("Your card: " + choice + " Computer card: " + choiceComp + ". Draw: no points awarded.");
 }
+alert("Your score: " + humanScore + ". Computer score: " + compScore)
 //case for if you choose the same card - no points awarded
-   
+
+//notify computer's chosen card and result of this round 
+//alert(choiceComp)
+//compares human card to ai card 
 
 alert("your current choices are " +arrayHuman )
 //exits game loop when no cards are left in array
-
 
 
 
